@@ -1,4 +1,4 @@
-# Project Checklist
+# Project Management Checklist
 
 * Enable remote tools. For example, Google Drive, Dropbox, ScreenHero, Git, etc.
 
