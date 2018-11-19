@@ -1,8 +1,8 @@
 <!--
-  * browser: sixarm-project-management-rope-estimate
-  * tracker: 25a0e40fdd0a833d5a17a3a3799d5546
+  * browser: sixarm-project-management-checklist
+  * tracker: 704ee393cc7ce47e2458a5505f089851
   * version: 2.0.0
-  * updated: 2018-11-19T06:30:08Z
+  * updated: 2018-11-19T07:45:48Z
   * contact: Joel Parker Henderson (http://joelparkerhenderson.com)
   * options: commentable
 -->
