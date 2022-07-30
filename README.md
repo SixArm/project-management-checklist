@@ -1,13 +1,14 @@
 <!--
-  * browser: sixarm-project-management-checklist
+  * browser: project-management-checklist
   * tracker: 704ee393cc7ce47e2458a5505f089851
-  * version: 2.0.0
-  * updated: 2018-11-19T07:45:48Z
+  * version: 2.1.0
+  * updated: 2022-07-30T23:10:01Z
+  * license: GPL-2.0-or-later or contact us for custom
   * contact: Joel Parker Henderson (http://joelparkerhenderson.com)
   * options: commentable
 -->
 
-# SixArm.com → Project management → <br>Checklist
+# Project management checklist
 
 * Enable remote tools. For example, Google Drive, Dropbox, ScreenHero, Git, etc.
 
