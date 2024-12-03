@@ -10,9 +10,17 @@
 
 # Project management checklist
 
-* Enable remote tools. For example, Google Drive, Dropbox, ScreenHero, Git, etc.
+Tools:
 
-* Create style guide. (Versioned and in central location)
+* Enable remote work tools.
+ 
+  * Examples: Google Drive, Amazon WorkSpace, Microsoft Teams, Zoom, Discord, etc. Ensure all teammates can participate. 
+
+* Ensure all the tools are up to date, have valid licenses, have correct payment methods, have appropriate security, etc.
+  
+* Ensure all the teammates can participate.
+
+* Ensure each new teammate is able to onboard quickly, and has a teammate who is able to help with onboarding to ensure it goes quickly, and to do continuous improvement on any onboarding issues.
 
 
 ## Project Management
@@ -21,15 +29,17 @@ Setup:
 
 * Document any communication about the project with other stakeholders.
 
-* Document any kinds of existing code, frameworks, libraries, processes, approvals, etc.
-
+* Document any kinds of existing code, frameworks, libraries, processes, approvals, etc. 
+  
 * Document any integration points. For example, does the project involve any other projects, products, applications, endpoints, imports/exports, feeds, email lists, group chat forums, etc.?
 
-* Document any stakeholders. For example, who are the people involved in the project? Are there other people who may be related to the project's goals, such as coworkers building other projects, or organization partners, or third-party vendors, etc.? If the organization is large and diverse, then be sure to check widely.
+* Document any stakeholders. For example, who are the people involved in the project? Are there other people who may be related to the project's goals, such as coworkers building other projects, or organization partners, or third-party vendors, etc.? If the organization is large and diverse, then be sure to check widely. Examples: Responsibility Assignment Matrix (RAM), Stakeholder Analysis, etc.
 
 * Create a stakeholder value map.
 
-* Create a plan for AAAA: authentication, authorization, auditing, accounting. For example, how does a user sign in, what credentials are expected, what entitlements are expected, etc. For example, consider Attribute-Based Access Control (ABAC) or its slightly less-powerful equiavent Role Based Access Control (RBAC).
+* Create a plan for AAAA: authentication, authorization, auditing, accounting. For example, how does a user sign in, what credentials are expected, what entitlements are expected, etc. For example, consider Attribute-Based Access Control (ABAC) or its slightly less-powerful equivalent Role Based Access Control (RBAC).
+
+* Implementation examples: Google Doc with writeup, README file, infrastructure as code (IaC), technical model (such as C4, TOGAF, ArchiMate, etc.).
 
 Ongoing:
 
@@ -39,18 +49,20 @@ Business:
 
 * Create a domain model.
 
+* Create style guide. (Versioned and in central location)
+
 
 ## Coding
 
 * Create a coding style guide. For example, one way is to create demonstration source code with embedded annotations, to show developers how to create classes, frameworks, modules, feature toggles, metrics, analytics, etc.
 
-* Create a "Hello World" app. The goal of the app is to prove it's runnable. Stand it up. Do the same with any of the related requirements, such as a "Hello World" database, a "Hello World" API gateway, etc.
+* Create a "Hello World" app. The goal of the app is to prove it's runnable. Stand it up. Do the same with any of the related requirements, such as a "Hello World" database, a "Hello World" API gateway, etc. Ensure a new teammate can load it, run it, change it, and deploy it into production.
 
 * Regularly groom the code to ensure it is idiomatic. If it's not, then fix it. This is especially important on projects where team members are new to the coding language and/or the coding tooling.
 
-* Create a plan for handling "tech debt". Distinguish between true tech debt (e.g. we're using a free trial license that will expire in 30 days) versus false tech debt (e.g. we're writing sub-par code and sometime in the future we'll clean it up). Document the debt in the source code repository so it lives with the code.
+* Create a plan for handling "tech debt". Distinguish between true tech debt (e.g. we're using a free trial license that will expire in 30 days, or software that is too outdated) versus false tech debt (e.g. we're writing sub-par code and sometime in the future we'll clean it up, or we're cutting corners here deliberately). Document the debt in the source code repository so it lives with the code.
 
-* Decide on team work practices. For example, pair programming (e.g. when do people pair, how often, why), remote working, expectations for rush work, etc.
+* Decide on team work practices. For example, pair programming (e.g. when do people pair, how often, why), remote working, expectations for rush work, how to prioritize requests, how to triage issues, and what "done" means.
 
 * Decide on a general approach for code overlaps. For example, Rails uses the ActiveRecord pattern to essentially provide complete code overlap between a model and its storage. For example, a more-complex project may have separate classes for view models, business logic models, and data storage models.
 
@@ -59,17 +71,23 @@ Business:
 
 Setup:
 
+* Decide on git options. For example, how will the project use git repositories, monorepo vs polyrepo, conventions, branches, tags, submodules, hooks, etc.
+
+* Decide how you want to do a typical git branch name. For ideas see https://github.com/joelparkerhenderson/git-branch-name
+
+* Decide how you want to do a typical git commit message. For ideas see https://https://github.com/joelparkerhenderson/git-commit-message
+
+* Decide how you want the team to use shared git alias commands, such as for shortcuts or processes. See http://gitalias.com
+
 * Create any hooks, such as a pre-commit hook, or post-commit hook.
 
-* Set up git alias commands. See http://gitalias.com
-
-* Decide if/how to use git submodules for project components. Generally, there's a major benefit to using submodules, in return for a learning curve.
+* Create any git submodules for project components. For some projects, there's a major benefit to using submodules, in return for a learning curve. For other projects, submodules are frustrating and should be avoided.
 
 * Document how the project uses feature toggles.
 
 Flow:
 
-* Decide on a git branch strategy. For example, decide on how a developer can start a topic, submit a topic, finish a topic, etc.
+* Decide on a git branch strategy. For example, decide on how a developer can start a topic, submit a topic, finish a topic, etc. For ideas see the git alias group "git topic-*" in http://gitalias.com.
 
 * Document preferred git tactics. For example, does the team want tiny commits (e.g. fix a typo), or small commits (e.g. fix all typos), or medium commits (e.g. create a new feature), or large commits (e.g. create a new framework).
 
